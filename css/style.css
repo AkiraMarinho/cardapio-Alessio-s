@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box; 
+    font-family: "Oxygen" ,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --collor-background: #181818;
+    --collor-button: #ffa500;
+    --color-letter: #eaeaea;
+    --color-latter_button: #131313;
+     --color-light: #d7d7d7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    color: var(--collor-button);
+}
+
+header {
+    background-color: var(--collor-background);
+    color: var(--color-white);
+    padding: 1.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-letter);
+    font-weight: 700;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1.5rem;
+}
+
+.home {
+    max-width: 100%;
+    height: auto;
+}
+.home_principal {
+    background-image: url(/img/titulo\ central.jpg);
+    color: var(--color-letter);
+    object-position: top;
+    min-height: 75vh;
+    padding: 10rem 0;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+.home h1 {
+    font-size: 4rem;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding: 1rem;
+    color: var(--color-letter);
+}
+
+.home .home_principal p {
+    font-family: "Roboto", sans-serif;
+    color: var(--color-letter);
+    font-size: 1.1rem;
+    font-weight: 300;
+    list-style: none;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.button {
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    background-color: var(--collor-button);
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-latter_button);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+section:not(#home) {
+    padding: 4rem;
+    text-align: center;
+}
+
+h2 {
+    color: var(--color-latter_button);
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.cardapio_itens > li {
+    background-color: var(--color-light);
+    border-radius: .5rem;
+    box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.5);
+    margin: 1.5rem;
+    display: inline-block;
+    height: 28rem;
+    width: 28rem;
+    text-align: left;
+}
+
+.cardapio_itens {
+    list-style: none;
+}
+
+.cardapio_itens img {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+.cardapio_itens > li > h3,
+.cardapio_itens > li > p {
+    padding: 1rem 1.25rem 0;
+}
+
+.sobreNos {
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0.0)0%,
+        rgba(0, 0, 0, 0.8)100%
+        ),
+        url(/img/pexels-eneida-nieves-905847.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+
+.sobreNos > .sobreNos_titulo h2{
+    color: var(--color-letter);
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-size: 4rem;
+}
+.sobreNos > .sobreNos_titulo p {
+    color: var(--color-letter);
+}
+
+address {
+  margin: 2rem 0;
+  font-style: italic;
+}
+
+address > * {
+    display: inline-block;
+    margin: 1.5rem;
+    text-align: left;
+}
+
+footer {
+    background-color: var(--collor-background);
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--collor-button);
+
+}
