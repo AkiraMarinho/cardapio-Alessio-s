@@ -79,7 +79,7 @@ nav a {
 
 @media (max-width: 600px) {
     .home_principal {
-    background-image: url(../img/titulo/central.jpg);
+    background-image: url(../img/titulo_central.jpg);
     background-position: top right;
     background-size: 90rem;
     height: 75vh;
@@ -90,7 +90,7 @@ nav a {
 }
 @media (min-width: 1024px) {
     .home_principal {
-    background-image: url(../img/titulo/central.jpg);
+    background-image: url(../img/titulo_central.jpg);
     object-position: top;
     min-height: 75vh;
     padding: 10rem 0;
