@@ -18,22 +18,52 @@ html {
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
 }
 
 a {
     color: var(--collor-button);
 }
 
-header {
+@media (max-width: 600px) {
+   header {
     background-color: var(--collor-background);
-    color: var(--color-white);
+    padding: 1rem 0;
+    } 
+}
+@media (min-width: 1024px) {
+    header {
+    background-color: var(--collor-background);
     padding: 1.5rem 0;
+    color: var(--color-letter);
+    }
 }
 
-nav ul {
+@media (max-width: 600px) {
+    nav ul {
     list-style: none;
     text-align: center;
+    }
+}
+@media (min-width: 1024px) {
+    nav ul {
+    list-style: none;
+    text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul li{
+    display: inline;
+    margin: 0 .6rem;
+    }
+}
+@media (min-width: 1024px) {
+    nav li {
+    display: inline;
+    margin: 0 1.5rem;
+    }
 }
 
 nav a {
@@ -42,23 +72,31 @@ nav a {
     font-weight: 700;
 }
 
-nav li {
-    display: inline;
-    margin: 0 1.5rem;
-}
-
 .home {
     max-width: 100%;
     height: auto;
 }
-.home_principal {
+
+@media (max-width: 600px) {
+    .home_principal {
     background-image: url(/img/titulo\ central.jpg);
-    color: var(--color-letter);
+    background-position: top right;
+    background-size: 90rem;
+    height: 75vh;
+    padding: 10rem 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    }
+}
+@media (min-width: 1024px) {
+    .home_principal {
+    background-image: url(/img/titulo\ central.jpg);
     object-position: top;
     min-height: 75vh;
     padding: 10rem 0;
     text-align: center;
     background-repeat: no-repeat;
+    }
 }
 
 .home h1 {
@@ -110,7 +148,20 @@ p {
     font-size: 1.25rem;
 }
 
-.cardapio_itens > li {
+@media (max-width: 600px) {
+    .cardapio_itens > li {
+    background-color: var(--color-light);
+    border-radius: .5rem;
+    box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.5);
+    margin: 1rem auto;
+    display: inline-block;
+    height: 22rem;
+    width: 18rem;
+    text-align: left;
+ }
+}
+@media (min-width: 1024px) {
+    .cardapio_itens > li {
     background-color: var(--color-light);
     border-radius: .5rem;
     box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.5);
@@ -119,8 +170,15 @@ p {
     height: 28rem;
     width: 28rem;
     text-align: left;
+ }
 }
 
+@media (max-width: 600px) {
+    .cardapio_itens h3,
+    .cardapio_itens  p {
+    font-size: .95rem;
+ }
+}
 .cardapio_itens {
     list-style: none;
 }
@@ -137,7 +195,20 @@ p {
     padding: 1rem 1.25rem 0;
 }
 
-.sobreNos {
+@media (max-width: 600px) {
+    .sobreNos {
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0.0)0%,
+        rgba(0, 0, 0, 0.8)100%
+        ),
+        url(/img/pexels-eneida-nieves-905847.jpg); 
+    background-size: 150%;
+    background-position: center top;
+    }
+}
+@media (min-width: 1024px) {
+    .sobreNos {
     background-image: linear-gradient(
         to bottom, 
         rgba(0, 0, 0, 0.0)0%,
@@ -146,17 +217,38 @@ p {
         url(/img/pexels-eneida-nieves-905847.jpg); 
     background-size: cover;
     background-position: center;
+    }
 }
 
-.sobreNos > .sobreNos_titulo h2{
+@media (max-width: 600px) {
+    .sobreNos > .sobreNos_titulo h2{
+    color: var(--color-letter);
+    padding-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 3rem;
+    }
+}
+@media (min-width: 1024px) {
+    .sobreNos > .sobreNos_titulo h2{
     color: var(--color-letter);
     padding-bottom: 1rem;
     font-weight: 600;
     font-size: 4rem;
+    }
 }
-.sobreNos > .sobreNos_titulo p {
+
+@media (max-width: 600px) {
+    .sobreNos > .sobreNos_titulo p {
+        color: var(--color-letter);
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1024px) {
+    .sobreNos > .sobreNos_titulo p {
     color: var(--color-letter);
+ }
 }
+
 
 address {
   margin: 2rem 0;
